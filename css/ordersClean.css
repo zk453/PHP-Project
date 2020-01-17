@@ -1,0 +1,92 @@
+body{
+	display:flex;
+	flex-direction: column;
+}
+
+.topbar{
+	display:flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+	margin: 0.1em 0 0.5em 0em;
+}
+
+.topbar > *{
+	margin-left:1em;
+}
+
+.menu_container{
+	display:flex;
+}
+
+.sidebar{
+	display:flex;
+	flex-direction:column;
+	width:13em;
+	align-items: center;
+}
+
+.sidebar>img{
+	width:10em;
+}
+.orderField{
+	flex:1;
+	display:flex;
+	flex-direction: column;
+	border: 0.05em solid #ABABAB;
+}
+
+.flexRow{
+	display:flex;
+	margin:0.2em;
+}
+.flexRow:nth-child(2n) > .flexData{
+	background:#E7E8EA;
+}
+
+.flexRow > div:nth-child(6){
+	margin-right: 0.2em;
+	padding-right:0;
+}
+
+.flexData{
+	flex:1 1 0;
+	width:0;
+	display:flex; 
+	justify-content: center;
+	padding:0.2em 0.2em 0.2em 0;
+
+}
+
+.flexHead {
+	flex:1;
+	display:flex;
+	justify-content: center;
+	height: 2em;
+	align-items: center;
+	color: orange;
+}
+
+.flexHead:nth-child(n+1){
+	margin-right: 0.2em;
+	
+}
+.flexHead:last-child{
+	margin-right: 0em;
+	
+}
+
+.actionsField > *{
+	margin: 0.2em 0; 
+}
+.actionsField{
+	margin-top: 1em;
+}
+.flexButtons{
+	flex:2;
+	display:flex;
+}
+.flexButtons .normalButton{
+	flex:1;
+	width:0;
+}

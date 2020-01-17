@@ -1,0 +1,113 @@
+table{
+    position:absolute;
+    font-family: Arial;
+	border:0.1em solid #ABABAB;
+    background-color: white;
+    left:12em;
+    width:calc(100% - 13em);
+}
+tr,td{
+    padding:2px 30px;
+    color: #471c04;
+}
+th{
+    color: #341604;
+}
+tr:nth-child(even){
+    background-color: rgba(255, 175, 0, 0.09);
+}
+
+.sidebar{
+    width:200px;
+    position:fixed;
+    height:100%;
+    background-color:white;
+}
+
+.actionsField input{
+    width:calc(100% - 4px);
+    margin:2px;
+}
+
+#changeForm{
+    position:absolute;
+    left:200px;
+    width:calc(100% - 200px);
+    display: inline-block;
+}
+
+
+input{
+    margin-bottom:10px;
+}
+
+input{
+    width:200px;
+}
+
+
+#changeForm input[type=submit]{
+    background-color: #ff9004;
+    position:relative;
+    border:none;
+    border-radius: 4px;
+    font-family: "Arial";
+    color:white;
+    font-size:17px;
+    font-weight: bold;
+    height:30px;
+}
+
+.largeButton{
+    background-color: #ff9004;
+    position:relative;
+    border:none;
+    border-radius: 4px;
+    height: 130px;
+    font-family: "Arial";
+    color:white;
+    font-size:17px;
+    font-weight: bold;
+    top:20px;
+}
+
+input[type=radio]{
+    width: 20px;
+}
+
+
+
+input[type=text],input[type=password]{
+    height:25px;
+    border-radius:3px;
+    border: 1px solid #ff9004;
+}
+
+.invalid{
+    background-color:lightpink;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+.error{
+    display:none;
+}
+
+.errorText{
+    font-family: Arial;
+    color:red;
+    position:relative;
+}
+
+.normalButton{
+	border:none;
+	font-size:12pt;
+ 	padding:0.3em; 
+}
+
+td .approveButton, td .disapproveButton{
+    float:left;
+    width:50%;
+    min-width: 130px;
+}

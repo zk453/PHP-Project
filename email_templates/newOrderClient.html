@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style type="text/css"?>
+    body{
+        width:550px;
+        font-family: Arial;
+    }
+    table{
+        width:500px;
+
+    }
+    h1 {
+        text-align:center;
+    }
+    .bold{
+        font-weight:bold;
+        font-size: 20px;
+    }
+    p{
+        color:black;
+        text-align:center;
+
+    }
+
+
+</style>
+<h1>Your order has been placed!</h1>
+
+<table style="color:black">
+    <tr>
+        <td>Name</td>
+        <td>{{ first_name }} {{ last_name }}</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>{{ phone }}</td>
+    </tr>
+    <tr>
+        <td>e-mail</td>
+        <td>{{ email }}</td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td>{{ city }}</td>
+    </tr>
+    <tr>
+        <td>Prefecture</td>
+        <td>{{ prefecture }}</td>
+    </tr>
+    <tr>
+        <td>Zip Code</td>
+        <td>{{ zip_code }}</td>
+    </tr>
+    <tr>
+        <td>DOY</td>
+        <td>{{ doy }}</td>
+    </tr>
+    <tr>
+        <td>AFM</td>
+        <td>{{ afm }}</td>
+    </tr>
+    <tr>
+        <th colspan="2">
+            Order Details
+        </th>
+    </tr>
+    <tr>
+        <td>Total Cost</td>
+        <td>{{ total }}</td>
+    </tr>
+    <tr>
+        <td>Order ID</td>
+        <td>{{ order_code }}</td>
+    </tr>
+</table>
+
+</body>
+</html>
